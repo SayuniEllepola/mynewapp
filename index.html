@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git & Github</title>
-    <link ref="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Sample App</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem a suscipit, inventore ab, pariatur molestias vitae aperiam modi nesciunt quibusdam recusandae accusantium tempora doloremque id ea fuga dolorum magni ad asperiores illo corporis minus sint quae fugiat? Qui impedit unde maxime iusto officiis tempora iure culpa, tenetur expedita eaque, repudiandae perspiciatis adipisci recusandae ut necessitatibus quibusdam totam? Tenetur quas assumenda laborum mollitia repellat voluptatum illo eos, libero earum delectus deleniti, natus veritatis rem dicta dignissimos atque quaerat. Tenetur adipisci eligendi accusantium praesentium reprehenderit mollitia exercitationem animi, possimus consectetur distinctio earum delectus fugiat facilis maiores ratione nemo suscipit, reiciendis vitae enim cumque alias blanditiis, ipsam nesciunt dolorum. Beatae nisi impedit doloribus! Aliquam hic repudiandae neque quos praesentium vitae placeat enim ipsum atque numquam tempore maiores possimus sunt deleniti qui facilis, illum provident in accusantium omnis molestias molestiae nam. Dolorum, ad magni? Accusamus beatae sunt dolorum delectus excepturi placeat impedit ducimus aut.</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>Todo</title>
+  </head>
+  <body>
+    <section class="todo">
+      <h2>To-do list</h2>
+      <div class="input">
+        <input
+          type="text"
+          class="input-field"
+          id="todoInput"
+          placeholder="Add a new todo"
+        />
+        <button class="btn">Add</button>
+      </div>
+      <ul class="scroll">
+        <li id="todoList"></li>
+      </ul>
+      <div>
+        <hr class="counter" />
+        <div class="counter-container">
+          <p><span id="todoCount">0</span> items total</p>
+          <button id="deleteButton">Delete All</button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <p class="made-by">Made By</p>
+        <p class="author">John Doe</p>
+      </div>
+    </footer>
+  </body>
 </html>
